@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'pip install --target ${env.WORKSPACE} -r requirements.txt'
+        withEnv(["HOME=${env.WORKSPACE}"]) {
+          sh 'pip install --user -r requirements.txt'
+        }
       }
     }
     stage('test') {
