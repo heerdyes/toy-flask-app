@@ -1,2 +1,2 @@
 # toy-flask-app
-a toy python-flask webapp to for devops pipeline demos
+a toy python-flask webapp for devops pipeline demos
